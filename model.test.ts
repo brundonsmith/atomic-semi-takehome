@@ -147,6 +147,24 @@ describe('applyOperationToSector', () => {
                 resistant: false
             }
         },
+        { // patterning on an empty stack does nothing
+            thisSectorName: 'left',
+            currentSectorState: {
+                materialLayers: [
+                ],
+                resistant: false
+            },
+            operation: {
+                id: '1',
+                name: 'pattern',
+                sector: 'left'
+            },
+            resultingSectorState: {
+                materialLayers: [
+                ],
+                resistant: false
+            }
+        },
         { // deposit A on top of A combines them into one layer
             thisSectorName: 'left',
             currentSectorState: {
