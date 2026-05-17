@@ -289,7 +289,7 @@ const StackVisualization: FC<{ stack: Stack, hovering: boolean }> = memo(({ stac
                         // if there's room, draw the material's name inside the box
                         if (height > 16) {
                             ctx.fillStyle = '#333'
-                            ctx.fillText(layer.material, x + (sectorWidth / 2), y + (height / 2))
+                            ctx.fillText(`${layer.material} (${layer.height}nm)`, x + (sectorWidth / 2), y + (height / 2))
                         }
 
                         // bump the base height for the next layer
