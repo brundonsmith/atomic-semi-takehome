@@ -1,6 +1,9 @@
 # Atomic Semiconductor Takehome
 
-## Running the project
+This project can be found hosted at
+[https://atomic-semi-takehome.onrender.com](https://atomic-semi-takehome.onrender.com)
+
+## Running the project locally
 
 The Bun JavaScript runtime is required to run this project and can be found
 here:
