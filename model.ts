@@ -26,6 +26,10 @@ export type Operation =
     | EtchOperation
 
 export type DepositOperation = {
+    /**
+     * This ID just needs to be unique within the flow; this is used at the UI
+     * level for keying React components in a stable way
+     */
     readonly id: string,
     readonly name: 'deposit',
     readonly material: MaterialName,
